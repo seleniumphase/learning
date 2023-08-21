@@ -33,7 +33,7 @@ public class devtool {
 		driver.executeCdpCommand("Emulation.setDeviceMetricsOverride", deviceMetrics);
 		
 		
-	/*	devtools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
+		devtools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
 		devtools.addListener(Network.requestWillBeSent(), request->
 		{
 			System.out.println(request.getRequest().getUrl());
@@ -45,11 +45,12 @@ public class devtool {
 			//Response res = response.getResponse();
 			System.out.println(response.getResponse().getStatus());
 		}
-				);*/
+				);
 		
 		//devtools.addListener(Fetch.enable(null, null), null);
 		
 		driver.get("https://www.flipkart.com/");
+		System.out.println("new");
 		
 		
 		
